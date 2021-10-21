@@ -16,4 +16,5 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-    database-platform: org.hibernate.dialect.Oracle10gDialect
+    database-platform: org.hibernate.dialect.Tibero5Dialect
+#    database-platform: org.hibernate.dialect.Oracle10gDialect
