@@ -1,0 +1,19 @@
+#server
+server:
+  port: 8000
+
+spring:
+  datasource:
+    url: jdbc:tibero:thin:@10.7.138.161:1521:GBIDW_POC
+    driver-class-name: com.tmax.tibero.jdbc.TbDriver
+    username: IMG_ETL
+    password: P!ssw0rd1013
+  batch:
+    job:
+      enabled: false
+    initialize-schema: always
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.Oracle10gDialect
